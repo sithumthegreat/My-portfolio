@@ -1,0 +1,247 @@
+/* styles for Home Page */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: white;
+    color: black;
+}
+header{
+    background: rgb(2, 2, 59);
+    color: #fff;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header h1{
+    font-size: 24px;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+nav a{
+    color: #fff;
+    margin-left: 100px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: xx-large;
+    
+}
+nav a:hover{
+    background-color: black;
+    transform: scale(1.1);
+  
+}
+/* main css */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 50px;
+    background-color: rgb(164, 195, 247);
+}
+.main-text{
+    max-width: 1200px;
+}
+.main-text h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.main-text p{
+    font-size: 36px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.main-text button{
+    padding: 12px 24px;
+    background-color: rgb(2, 2, 69);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.main-text button:hover{
+    transform: scale(1.1);
+}
+.main-image img {
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 120px;
+}
+/* projects section */
+.projects{
+    padding: 40px 50px;
+    background:  #f0fdf4; 
+    
+
+}
+.projects h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    
+} 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+.card{
+    background: linear-gradient(135deg,#6ee7b7,#3b82f6);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 8px black;
+    transition: transform 0.3s;
+}
+.card h4{
+    font-size: xx-large;
+}
+.card p{
+    font-size: larger;
+}
+.card a{
+    color: #2383c3;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: larger;
+    color: darkblue;
+    font-weight: bolder
+}
+.card a:hover{
+    transform: scale(1.1);
+}
+.card:hover{
+    transform: translate(-10px);
+}
+
+.scale-effect {
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
+.skill{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(17, 17, 118);
+    color: white;
+    display: flex;
+    transition: transform 0.3s;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.skill:hover{
+    transform: scale(1.2);
+}
+.skills h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    
+}
+.education{
+    margin: 0 auto;
+    max-width: 1900px;
+
+}
+.edu{
+    margin-bottom: 1rem;
+    box-shadow:  0 2px 6px rgba(20, 19, 19, 0.1);
+    border-radius: 12px;
+    padding: 1rem;
+    background: white;
+    background: linear-gradient(135deg, #4facfe, #032c72);
+}
+.edu h3{
+    color: darkblue;
+    
+}
+.edu p{
+    margin: 0.3rem 0;
+}
+ul{
+    list-style-type: none;
+}
+.certificates{
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+.certificates h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #030303;
+}
+.certificate-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.certificate {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #3498db;
+}
+.certificate:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(22, 1, 61, 0.2);
+}
+.certificate img {
+  max-width: 60px;
+  display: block;
+  margin-bottom: 11px;
+}
+.certificate h3 {
+  color: #0862bc;
+}
+.certificate p {
+  color: #0a0a0a;
+}
+.footer{
+    background-color: #0c055b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+.footer-section{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.footer p{
+    margin: 0;
+    font-size: 14px;
+}
+.links{
+    margin-top: 10px;
+}
+.links a{
+    color: #ccc;
+    margin:0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.links a:hover{
+    color: #3498db;
+}
