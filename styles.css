@@ -245,3 +245,79 @@ ul{
 .links a:hover{
     color: #3498db;
 }
+/* /////////////////////////////// */
+
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 5px 10px;
+        font-size: medium;
+    }
+
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main-text h2 {
+        font-size: 24px;
+    }
+
+    .main-text p {
+        font-size: 18px;
+    }
+
+    .main-text button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .main-image img {
+        width: 200px;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .skill {
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+    }
+
+
+    .certificate-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificate {
+        width: 90%;
+    }
+}

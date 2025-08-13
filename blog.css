@@ -46,3 +46,28 @@ body{
 .button:hover{
     background-color: #000000;
 }
+
+@media screen and (max-width: 768px) {
+    .blog-container {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .blog {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .blog h2 {
+        font-size: 22px;
+    }
+
+    .blog p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
